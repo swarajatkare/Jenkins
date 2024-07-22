@@ -29,6 +29,7 @@ pipeline {
         }
     }
 
+
          stage('Build on kubernetes'){
         steps {
             withKubeConfig([credentialsId: 'kubeconfig']) {
